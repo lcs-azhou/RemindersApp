@@ -12,7 +12,6 @@
 		7951237E2AF6833B00776474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7951237D2AF6833B00776474 /* Assets.xcassets */; };
 		795123812AF6833B00776474 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 795123802AF6833B00776474 /* Preview Assets.xcassets */; };
 		795123882AF685A900776474 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795123872AF685A800776474 /* ToDoListView.swift */; };
-		7951238A2AF6926000776474 /* NavigationStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795123892AF6926000776474 /* NavigationStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		7951237D2AF6833B00776474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		795123802AF6833B00776474 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		795123872AF685A800776474 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
-		795123892AF6926000776474 /* NavigationStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +55,7 @@
 			children = (
 				795123792AF6833800776474 /* RemindersAppApp.swift */,
 				7951237B2AF6833800776474 /* ContentView.swift */,
+				795123872AF685A800776474 /* ToDoListView.swift */,
 				7951237D2AF6833B00776474 /* Assets.xcassets */,
 				7951237F2AF6833B00776474 /* Preview Content */,
 			);
@@ -67,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				795123802AF6833B00776474 /* Preview Assets.xcassets */,
-				795123872AF685A800776474 /* ToDoListView.swift */,
-				795123892AF6926000776474 /* NavigationStack.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -145,7 +142,6 @@
 			files = (
 				795123882AF685A900776474 /* ToDoListView.swift in Sources */,
 				7951237C2AF6833800776474 /* ContentView.swift in Sources */,
-				7951238A2AF6926000776474 /* NavigationStack.swift in Sources */,
 				7951237A2AF6833800776474 /* RemindersAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
