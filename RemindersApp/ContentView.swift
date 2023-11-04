@@ -18,6 +18,10 @@ struct ContentView: View {
                 Spacer()
                 List {
                     Group {
+                        Text("To Do")
+                            .font(.system(.largeTitle, design: .rounded))
+                            .fontWeight(.bold)
+                            .foregroundColor(.blue)
                         ToDoListView(toDoName: "Call auto body shop",
                                      toDoTime: "2023-11-16")
                         ToDoListView(toDoName: "Feed Piper",

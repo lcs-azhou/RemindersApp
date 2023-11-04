@@ -14,22 +14,23 @@ struct ToDoListView: View {
     var body: some View {
         ZStack {
             HStack {
-                LazyHStack(alignment:.top) {
                     Image(systemName: "circle")
                         .resizable()
                         .scaledToFit()
-                        .frame(width:30)
+                        .frame(width:25)
                         .foregroundColor(.lightGray)
-                }
                 Spacer()
                     .frame(width: 15)
                 VStack {
                     LazyVStack(alignment:.leading) {
                         Text(toDoName)
                             .foregroundColor(.black)
-                            .font(Font.system(size: 18))
+                            .font(Font.system(size: 16))
+                        Spacer()
+                            .frame(height: 5)
                         Text(toDoTime)
                             .foregroundColor(.gray)
+                            .font(Font.system(size: 14))
                     }
                     
                 }
