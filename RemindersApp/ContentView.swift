@@ -13,13 +13,14 @@ struct ContentView: View {
             VStack {
                 ZStack {
                     //            First layer(background)
-
-                                
+                    
                     //            Second layer(rest of interface)
-                    VStack {
-                        Spacer()
+                       Spacer()
                         List {
-                            Text("To Do")
+//                            Text("To Do")
+//                                .font(.system(.largeTitle, design: .rounded))
+//                                .fontWeight(.bold)
+//                                .foregroundColor(.blue)
                             Group {
                                 ToDoListView(toDoName: "Call auto body shop",
                                              toDoTime: "2023-11-16")
@@ -37,22 +38,41 @@ struct ContentView: View {
                                              toDoTime: "2023-11-06, 4:00 PM")
                                 ToDoListView(toDoName: "Call mechanic to get TARDIS repaired",
                                              toDoTime: "Tomorrow, 12:00 PM")
-                            }
-                        }.listStyle(.grouped)
+                            }.listRowInsets(EdgeInsets(top: 3, leading: 0, bottom: 3, trailing: 0))
+                        }.listStyle(.plain)
                         
-                    }
+                    
                     
                 }
                 .toolbar {
                     ToolbarItem(placement:.topBarLeading) {
-                        Text("Lists")
+                        Button(action:{}){
+                            Image(systemName: "chevron.backward")
+                                .fontWeight(.semibold)
+                            Text("Lists")
+                        }
                     }
                     ToolbarItem(placement: .topBarTrailing) {
-                        Image(systemName:"ellipsis.circle")
-                            .padding(.horizontal)
+                        HStack{
+                            Button(action:{}) {
+                                Image(systemName:"square.and.arrow.up")
+                                    .padding(.horizontal)
+                            }
+                            Button(action:{}) {
+                                Image(systemName:"ellipsis.circle")
+                                    .padding(.horizontal)
+                            }
+                        }
+                    }
+                    ToolbarItem(placement:.bottomBar) {
+                        Button(action:{}){
+                            Image(systemName: "plus.circle.fill")
+                            Text("New Reminder")
+                        }
                     }
                 }
-                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("To Do")
+                
                 
             }
         }

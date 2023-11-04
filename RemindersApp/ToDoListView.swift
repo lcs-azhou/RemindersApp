@@ -18,7 +18,7 @@ struct ToDoListView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width:25)
-                        .foregroundColor(.lightGray)
+                        .foregroundColor(.lightGrey)
                 Spacer()
                     .frame(width: 15)
                 VStack {
@@ -35,7 +35,7 @@ struct ToDoListView: View {
                     
                 }
             }
-            .frame(height: 57)
+            .frame(height: 65)
             .padding(.horizontal)
         }
     }
